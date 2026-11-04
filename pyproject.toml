@@ -1,0 +1,6 @@
+[project]
+name = "rubiks-gn-data"
+version = "0.1.0"
+description = "Generates and checks the finite tables used by the Lean formalization"
+requires-python = ">=3.10"
+dependencies = ["sympy>=1.12"]

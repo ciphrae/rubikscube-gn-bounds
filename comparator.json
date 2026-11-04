@@ -1,0 +1,34 @@
+{
+    "challenge_module": "Comparator.Challenge",
+    "solution_module": "Comparator.Solution",
+    "theorem_names": [
+        "RubiksGN.main_explicit",
+        "RubiksGN.main_upper_all",
+        "RubiksGN.main_asymptotic",
+        "RubiksGN.main_second_order",
+        "RubiksGN.lgZ_div_four",
+        "RubiksGN.main_limits",
+        "RubiksGN.lgE_bounds",
+        "RubiksGN.main_labelled_second_order",
+        "RubiksGN.main_coloured_lower",
+        "RubiksGN.main_explicit'",
+        "RubiksGN.main_coloured_second_order",
+        "RubiksGN.coloured_explicit",
+        "RubiksGN.explicit_100",
+        "RubiksGN.main_lower_htm",
+        "RubiksGN.main_lower_qtm",
+        "RubiksGN.explicit_128",
+        "RubiksGN.explicit_256",
+        "RubiksGN.explicit_1024",
+        "RubiksGN.act_isSticker",
+        "RubiksGN.act_inv_act",
+        "RubiksGN.act_act_inv",
+        "RubiksGN.coord_rx"
+    ],
+    "permitted_axioms": [
+        "propext",
+        "Quot.sound",
+        "Classical.choice"
+    ],
+    "enable_nanoda": false
+}
