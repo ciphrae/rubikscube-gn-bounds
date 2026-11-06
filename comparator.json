@@ -20,6 +20,8 @@
         "RubiksGN.explicit_128",
         "RubiksGN.explicit_256",
         "RubiksGN.explicit_1024",
+        "RubiksGN.main_labelled_exact",
+        "RubiksGN.main_coloured_exact",
         "RubiksGN.act_isSticker",
         "RubiksGN.act_inv_act",
         "RubiksGN.act_act_inv",

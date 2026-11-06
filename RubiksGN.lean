@@ -1,1 +1,1 @@
-import RubiksGN.MainAll
+import RubiksGN.MainExact

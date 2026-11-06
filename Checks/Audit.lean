@@ -1,4 +1,4 @@
-import RubiksGN.MainAll
+import RubiksGN.MainExact
 
 /-! Run with `lake env lean Checks/Audit.lean`: only `propext`, `Classical.choice`, `Quot.sound`. -/
 
@@ -26,3 +26,5 @@ import RubiksGN.MainAll
 #print axioms RubiksGN.explicit_1024
 #print axioms RubiksGN.logZ_div_four_le
 #print axioms RubiksGN.godLabelled_le_trie
+#print axioms RubiksGN.main_labelled_exact
+#print axioms RubiksGN.main_coloured_exact

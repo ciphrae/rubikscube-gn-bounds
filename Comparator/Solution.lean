@@ -1,3 +1,3 @@
-import RubiksGN.MainAll
+import RubiksGN.MainExact
 
-/-! Comparator solution: the main theorems of `RubiksGN.Main` and `RubiksGN.MainAll`. -/
+/-! Comparator solution: the main theorems of `RubiksGN.Main`, `RubiksGN.MainAll` and `RubiksGN.MainExact`. -/

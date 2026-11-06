@@ -30,15 +30,19 @@ The older bounds in this repository had limits 12.88 (lower) and 137.5 (upper) f
 
 ### Explicit lower-order terms
 
-For `n ≥ 2⁶⁴` and both metrics, with no `ε` (`main_labelled_second_order`, `main_coloured_second_order`):
+For `n ≥ 2⁶⁴` and both metrics, with no `ε`, and with the exact main terms `E = log₂(24!/2)/4` and `Ez = log₂(24!/(4!)⁶)/4`
+on both sides (`main_labelled_exact`, `main_coloured_exact`):
 
 ```text
-(19.509 (n+1)(n−3) − 1) / (log₂ n + 2.89)     ≤  godLabelled  ≤  19.51 n² / (log₂ n − log₂log₂ n − 7.59)
-(12.88 (n−1)(n−3) − 16.6) / (log₂ n + 2.89)   ≤  godColoured  ≤  12.8821 n² / (log₂ n − 3 log₂log₂ n − 7.63)
+(E (n+1)(n−3) − 1) / (log₂ n + 2.89)       ≤  godLabelled  ≤  E n² / (log₂ n − log₂log₂ n − 7.59)
+(Ez (n−1)(n−3) − 16.6) / (log₂ n + 2.89)   ≤  godColoured  ≤  Ez n² / (log₂ n − 3 log₂log₂ n − 7.63)
 ```
 
-The lower bounds hold for all `n ≥ 3`, and the `2.89` improves to `2.33` in the quarter-turn metric (`main_lower_htm`, `main_lower_qtm`). They count words up to the commutation of parallel moves. The remaining gap is in these denominators: see
-[Open](#open).
+So the bounds differ only in lower-order terms: by the factor `(log₂ n + 2.89) / (log₂ n − log₂log₂ n − 7.59)` for the labelled cube, plus `O(1/n)`.
+The lower bounds hold for all `n ≥ 3`, and the `2.89` improves to `2.33` in the quarter-turn metric (`lowerExact_labelled`, `lowerExact_coloured`,
+with `dMove μ`). They count words up to the commutation of parallel moves. Versions with the decimals `19.509 ≤ E ≤ 19.51` and
+`12.88 ≤ Ez ≤ 12.8821` are `main_labelled_second_order`, `main_coloured_second_order`, `main_lower_htm` and `main_lower_qtm`. The remaining gap is in the
+denominators: see [Open](#open).
 
 ### Explicit constants
 
@@ -127,7 +131,7 @@ The new scheme uses all of the `log₂ n` bits of each column move.
 
 ## Open
 
-- **Second-order term.** Is the true denominator `log₂ n + O(1)`? The lower bound gives `log₂ n + 2.89` (`2.33`), and the upper bound `log₂ n − log₂log₂ n − 7.59`. Numerical experiments on relations (not proved)
+- **Second-order term.** With the same main term `E` on both sides, the denominators are `log₂ n + 2.89` (`2.33`) below and `log₂ n − log₂log₂ n − 7.59` above. Is the true denominator `log₂ n + O(1)`? Numerical experiments on relations (not proved)
   suggest the word count has no `log log` loss. Any scheme with `T` slots spends about `T` row moves carrying few bits, so the `log₂log₂ n` looks inherent to block schemes (a sketch, not proved). Removing it requires row moves that carry
   information themselves.
 - **Coloured second order.** Trie slots do not apply to covering sets, hence `3 log₂log₂ n` there. An improvement would need structured covering codes.
